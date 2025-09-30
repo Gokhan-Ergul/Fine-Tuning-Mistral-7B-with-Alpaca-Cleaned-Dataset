@@ -14,10 +14,4 @@ To keep training fast and resource-friendly, the dataset and hyperparameters wer
 - **Epochs:** 1 (for quick experimentation)  
 - **Goal:** Provide a minimal, reproducible notebook for rapid prototyping.
 
-## ✅ Dataset Preparation
-
-To speed up training, only a subset of the training split was used:
-
-```python
-mini_ds = ds["train"].shuffle(seed=42).select(range(2000))
 
